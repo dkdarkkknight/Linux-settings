@@ -14,3 +14,12 @@ sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
 sudo apt install brave-browser
+
+proxychains
+sudo apt-get install tor
+sudo apt install proxychains
+nano /etc/proxychains.conf
+  Remove Dynamic chain from comment
+  comment Strict chain and Random chain
+  Remove proxy DNS from comment
+  write socks5 127.0.0.1 9050 in last line of proxy list 
