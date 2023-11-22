@@ -1,35 +1,37 @@
 protonvpn-cli setup
-protonvpn deb file
-https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3_all.deb
-sudo apt install ~/Downloads/protonvpn-stable-release_1.0.3_all.deb
-sudo apt update
-sudo apt-get install protonvp-cli
-protonvpn-cli login {username}
-protonvpn-cli c
-protonvpn-cli ns --ads-malware
+  protonvpn deb file
+  https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3_all.deb
+  sudo apt install ~/Downloads/protonvpn-stable-release_1.0.3_all.deb
+  sudo apt update
+  sudo apt-get install protonvp-cli
+  protonvpn-cli login {username}
+  protonvpn-cli c
+  protonvpn-cli ns --ads-malware
 
 brave browser 
-sudo apt install curl
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install brave-browser
+  sudo apt install curl
+  sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+  echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+  sudo apt update
+  sudo apt install brave-browser
 
 proxychains
-sudo apt-get install tor
-sudo apt install proxychains
-nano /etc/proxychains.conf
-  Remove Dynamic chain from comment
-  comment Strict chain and Random chain
-  Remove proxy DNS from comment
-  write socks5 127.0.0.1 9050 in last line of proxy list 
+  sudo apt-get install tor
+  sudo apt install proxychains
+  nano /etc/proxychains.conf
+    Remove Dynamic chain from comment
+    comment Strict chain and Random chain
+    Remove proxy DNS from comment
+    write socks5 127.0.0.1 9050 in last line of proxy list 
 
 clear RAM caches
-sudo sysctl vm.drop_caches=3
+  sudo sysctl vm.drop_caches=3
 
 steam install
-sudo add-apt-repository multiverse
-sudo apt update
-sudo apt upgrade
-sudo apt install steam
-steam
+  sudo add-apt-repository multiverse
+  sudo apt update
+  sudo apt upgrade
+  sudo apt install steam
+  steam
+steam remove
+  sudo apt remove steam
