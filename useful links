@@ -23,3 +23,6 @@ nano /etc/proxychains.conf
   comment Strict chain and Random chain
   Remove proxy DNS from comment
   write socks5 127.0.0.1 9050 in last line of proxy list 
+
+clear RAM caches
+sudo sysctl vm.drop_caches=3
