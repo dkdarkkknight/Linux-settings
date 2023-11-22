@@ -27,6 +27,13 @@ proxychains
 clear RAM caches
   sudo sysctl vm.drop_caches=3
 
+clear apt caches
+to check amout of apt cache memory
+  sudo du -sh /var/cache/apt/archives
+to clear the apt cache
+  sudo apt-get clean --dry-run
+  sudo apt-get clean
+
 steam install
   sudo add-apt-repository multiverse
   sudo apt update
