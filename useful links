@@ -26,3 +26,10 @@ nano /etc/proxychains.conf
 
 clear RAM caches
 sudo sysctl vm.drop_caches=3
+
+steam install
+sudo add-apt-repository multiverse
+sudo apt update
+sudo apt upgrade
+sudo apt install steam
+steam
